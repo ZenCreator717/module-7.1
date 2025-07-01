@@ -1,0 +1,45 @@
+body
+{
+  background-color:antiquewhite;  
+}
+h1
+{
+    font-size: 45px;
+font: bold;
+}
+p
+{
+    font-size: 45px;
+font: bold;
+font-family: fantasy;
+}
+caption
+{
+      font-size: 45px;
+font: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+td, th {
+    color: brown;
+  border: 1px solid black;
+  padding: 20px;
+}
+td{
+  background: gray;
+  color: white;
+}
+.primary{
+  background-color: brown;
+  position: sticky;
+}
+ th {
+  background: #ffc107;
+  color: black;
+  border-radius: 0;
+  top: 0;
+  padding: 10px;
+  font-size: 35;
+}
+tbody > tr:hover {
+  background-color: #ffc107;
+}
