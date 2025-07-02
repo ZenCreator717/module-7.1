@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zen</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    body {
+      background-color: rgba(70, 224, 186, 0.904);
+    }
+    .center {
+      text-align: center;
+    }
+    .font-size-30 {
+      font-size: 30px;
+    }
+    .font-color-6698FF {
+      color: #6698FF;
+    }
+    .nav {
+      text-align: center;
+    }
+    .img-width-500 {
+      width: 500px;
+      height: 750px;
+    }
+    .img-yin-yang {
+      width: 100px;
+      height: 100px;
+    }
+    .shake-animation {
+      animation: shake 0.5s infinite;
+    }
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <p class="font-size-30 font-color-6698FF">Welcome To Our Safe Space</p>
+    <class="row">
+      <div class="column">
+        <img src="Spiritual-enlightenment.jpg" alt="Spiritual-enlightenment" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="ousa.jpg" alt="Ousa" style="width: 100%">
+      </div>
+  </div>
+  <nav class="nav">
+    <h2 style="color: #7FFFD4;">Inhale the future Exhale the Past</h2>
+    <img src="https://c6m8f8h4.rocketcdn.me/wp-content/uploads/2015/06/Inspirational-Quote-21.jpg" alt="Set the future free" class="img-width-500">
+  </nav>
+  <h1 class="center">Yin Yang</h1>
+  <center>
+    <img src="Yin-Yang-Energy1.jpg" alt="Yin Yang Energy" class="img-yin-yang">
+  </center>
+  <center>
+    <img src="Yin-Yang.jpg" alt="Yin Yang" class="img-yin-yang">
+  </center>
+  <nav class="nav">
+    <h3 style="color: rgb(61, 216, 255);">Release and Let Go</h3>
+  </nav>
+  <center>
+    <img src="green-tea-green-mug.gif" alt="Green Tea" id="meme">
+    <button id="start">Start</button>
+    <button id="stopButton">Stop</button>
+  </center>
+  <br>
+  <center>
+    <img src="meditation-relaxing-gif.png" alt="Meditation">
+  </center>
+  <script>
+    alert("Welcome To My Website ZEN...Take a Deep Breath in and Release a Big Exhale");
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const meme = document.getElementById('meme');
+      const startButton = document.getElementById('start');
+      const stopButton = document.getElementById('stopButton');
+
+      if (meme && startButton && stopButton) {
+        function startMoving() {
+          meme.classList.add('shake-animation');
+        }
+
+        function stopMoving() {
+          meme.classList.remove('shake-animation');
+        }
+
+        startButton.addEventListener('click', startMoving);
+        stopButton.addEventListener('click', stopMoving);
+      } else {
+        console.error("One or more elements not found!");
+      }
+    });
+  </script>
+</body>
+</html>
+<footer>
+</footer>
